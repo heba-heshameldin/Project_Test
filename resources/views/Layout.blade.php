@@ -25,7 +25,11 @@
           <li><a href="#">Games</a></li>
         </ul>
       </li>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">Register</a></li>
       <li><a href="#">Profile</a></li>
+
+    
     </ul>
     <form class="navbar-form navbar-left" action="/action_page.php">
       <div class="input-group">

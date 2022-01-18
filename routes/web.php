@@ -1,6 +1,13 @@
 <?php
 
+use App\Http\Controllers\AdminCommintController;
+use App\Http\Controllers\AdminPostsController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PagesController;
+use App\Http\Controllers\UserCommintController;
+use App\Http\Controllers\UserPostsController;
+
+;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +23,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('Layout');
 });
+Route::resource('/post',UserPostsController::class);
+Route::resource('/post',UserCommintController::class);
+Route::resource('/post',AdminPostsController::class);
+Route::resource('/post',AdminCommintController::class);
+
+
